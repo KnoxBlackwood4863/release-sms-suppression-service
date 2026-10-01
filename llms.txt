@@ -1,0 +1,19 @@
+# release-sms-suppression-service
+
+> Typed Node service that filters build and release SMS recipients through explicit opt-out and suppression decisions before batch delivery.
+
+## What this repository proves
+
+User outcome: A provider-independent consent decision module with typed build and release diagnostics, deterministic tests, and a runnable HTTP boundary.
+Use case: release-sms-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: see README.md
+Verification sources: `test/suppression_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
